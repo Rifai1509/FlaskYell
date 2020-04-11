@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+{% block body %}
+
+<body>
+<h2><center>Daftar {{term}} di {{location}}</center></h2>
+<p><center>Ini adalah aplikasi web scraper dari yell.com</center></p>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Post Code</th>
+        <th>Telp</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for data in datas %}
+      <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td>{{data[2]}}</td>
+        <td>{{data[3]}}</td>
+        <td>{{data[4]}}</td>
+        <td>{{data[5]}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+</body>
+<body>
+
+<center>
+<div class="container">
+  <ul class="pagination">
+    <li><a href="/results/page=1">1</a></li>
+    <li><a href="/results/page=2">2</a></li>
+    <li><a href="/results/page=3">3</a></li>
+    <li><a href="/results/page=4">4</a></li>
+    <li class="active"><a href="/page=5">5</a></li>
+  </ul>
+</div>
+</center>
+</body>
+{% endblock %}

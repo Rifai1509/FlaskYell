@@ -1,0 +1,45 @@
+{% extends 'Home.html' %}
+
+{% block body %}
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input[type=text] {
+  width: 330px;
+  box-sizing: border-box;
+  border: 4px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 90%;
+}
+</style>
+</head>
+<center>
+<h1><strong>Mau Cari Apa Pak? Istri Bapak Tidak Disini.. Hehe</strong></h1>
+<h2><strong>Adanya Yang Bawah Ini, Silakan Pilih Salah Satu Saja :)</strong></h2>
+</center>
+<body>
+<br/> <br/>
+<center>
+   <a href="/results/page=1" class="btn btn-default btn-lg">
+       <span class="glyphicon glyphicon-search"></span> Hotel in UK
+  </a>
+
+    <h4><br/><strong> NOTE : Jika Mau Ganti Pencaian, silakan ganti sendiri dengan mengganti semua keyword yang pada fungsi result, tank you :)</strong></h4>
+</center>
+
+</body>
+
+{% endblock %}
